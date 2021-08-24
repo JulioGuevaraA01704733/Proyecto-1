@@ -3,7 +3,6 @@
 
 """
 
-
 Algoritmo para cacular el Índice de Masa Corporal (IMC) de una persona a partir de su peso, sexo, edad, y estatura; además del rango recomendado de 
 IMC basado en los últimos 3 datos mencionados.
 
@@ -22,22 +21,31 @@ Proceso:
   
   
 4. Si género=mujer, entonces
+
     Si edad<x, entonces
+    
     Imprimir("Tu indice de masa coporal ideal es entre x y z")
+    
     Si edad>=x y edad<=x, entonces
+    
     Imprimir("Tu indice de masa coporal ideal es entre x y z")
+    
     etc.
     
     
     Si no, entonces
+    
     Si edad<=x, entonces
+    
     Imprimir("Tu indice de masa coporal ideal es entre x y z")
+    
     Si edad>=x y edad<=x, entonces
+    
     Imprimir("Tu indice de masa coporal ideal es entre x y z")
+    
     etc.
     
     
 E(F)= Impresión de tu IMC y rango recomendado.
-
 
 """
