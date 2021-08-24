@@ -8,6 +8,7 @@ IMC basado en los últimos 3 datos mencionados.
 
 
 E(O)= Imprimir preguntas ¿Cuál es tu peso, sexo, edad, estatura?
+
 Proceso: 
 1. Leer y registrar respuestas como variables
 2. Efectuar cálculo para definir el IMC. Peso en kg / (altura en metros)**2
