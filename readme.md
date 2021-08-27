@@ -2,6 +2,7 @@
 
 ## Julio Eugenio Guevara A01704733
 
+"""
 
 Algoritmo para cacular el Índice de Masa Corporal (IMC) de una persona a partir de su peso, sexo, edad, y estatura; además del rango recomendado de 
 IMC basado en los últimos 3 datos mencionados.
@@ -49,3 +50,19 @@ Proceso:
     
 E(F)= Impresión de tu IMC y rango recomendado.
 
+"""
+
+
+print("Hola, esta es tu calculadora de IMC.")
+
+print("¿Cuál es tu peso en kilogramos?")
+
+peso = float(input())
+
+print("¿Cuál es tu estatura en metros?")
+
+estatura = float(input())
+
+IMC = peso / (estatura*estatura)
+
+print("Tu IMC es de ","%.2f" % IMC)
