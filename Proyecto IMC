@@ -38,4 +38,4 @@ else :
         elif edad >= 35 and edad <= 54 :
             print("Tu IMC ideal está entre 23 y 28.")
         elif edad >= 55 and edad <= 64 :
-            print("Tu IMC ideal está entre 23 y 28.")
+            print("Tu IMC ideal está entre 24 y 29.")
