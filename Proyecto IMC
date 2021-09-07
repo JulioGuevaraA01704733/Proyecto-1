@@ -3,10 +3,9 @@ print("¿Cuál es tu peso en kilogramos?")
 peso = float(input())
 print("¿Cuál es tu estatura en metros?")
 estatura = float(input())
-
-IMC = peso / (estatura*estatura)
-
-print("Tu IMC es de ","%.2f" % IMC)
+def IMC(peso1, estatura1) :
+    return peso1 / (estatura1*estatura1)
+print("Tu IMC es de ", (IMC(peso, estatura)))
 print("¿Cuál es tu edad?")
 edad = int(input())
 if edad <= 15 :
