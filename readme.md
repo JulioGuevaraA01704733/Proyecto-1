@@ -4,8 +4,7 @@
 
 """
 
-Algoritmo para cacular el Índice de Masa Corporal (IMC) de una persona a partir de su peso, sexo, edad, y estatura; además del rango recomendado de 
-IMC basado en los últimos 3 datos mencionados.
+Algoritmo para cacular el Índice de Masa Corporal (IMC) de una persona, el rango recomendado de IMC, y  las calorías aproximadas que se utilizan en un día;  a partir de su peso, sexo, edad, estatura y nivel de actividad física.
 
 Guía para TMB:
 
