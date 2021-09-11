@@ -7,6 +7,9 @@
 Algoritmo para cacular el Índice de Masa Corporal (IMC) de una persona a partir de su peso, sexo, edad, y estatura; además del rango recomendado de 
 IMC basado en los últimos 3 datos mencionados.
 
+Guía para TMB:
+
+http://gymvirtual.com/como-calcular-las-calorias-que-necesitas/
 
 E(O)= Imprimir preguntas ¿Cuál es tu peso, sexo, edad, estatura?
 
