@@ -1,15 +1,3 @@
-print("Hola, esta es tu calculadora de IMC.")
-print("¿Cuál es tu peso en kilogramos?")
-peso = float(input())
-print("¿Cuál es tu estatura en metros?")
-estatura = float(input())
-print("¿Cuál es tu sexo, hombre o mujer?")
-sexo = str(input())
-print("¿Cuál es tu edad?")
-edad = int(input())
-print("Indica tu nivel de ejercicio: \n 1 si haces poco ejercicio o nulo \n 2 si haces ejercicio ligero de 1 a 3 días de la semana \n 3 si ejercicio moderado, de 3 a 5 días a la semana \n 4 si haces ejercicio de 6 a 7 días a la semana \n 5 si entrenas diariamente mañana y tarde")
-nivel_ejercicio = int(input())
-
 def IMC (peso1, estatura1):
     return peso1 / (estatura1*estatura1)
 
@@ -62,7 +50,18 @@ def TMC2(peso2, estatura2, edad2, sexo2, ejercicio):
         return (TMC(peso2, estatura2, edad2, sexo2) * 1.72)
     elif ejercicio == 5 :
         return (TMC(peso2, estatura2, edad2, sexo2) * 1.9)
-
-print("Tu IMC es de ", IMC(peso, estatura))
+    
+print("Hola, esta es tu calculadora de IMC.")
+print("¿Cuál es tu peso en kilogramos?")
+peso = float(input())
+print("¿Cuál es tu estatura en metros?")
+estatura = float(input())
+print("¿Cuál es tu sexo, hombre o mujer?")
+sexo = str(input())
+print("¿Cuál es tu edad?")
+edad = int(input())
+print("Indica tu nivel de ejercicio: \n 1 si haces poco ejercicio o nulo \n 2 si haces ejercicio ligero de 1 a 3 días de la semana \n 3 si ejercicio moderado, de 3 a 5 días a la semana \n 4 si haces ejercicio de 6 a 7 días a la semana \n 5 si entrenas diariamente mañana y tarde")
+nivel_ejercicio = int(input())
+print("Tu IMC es de","%.2f" % IMC(peso, estatura))
 print(IMC_ideal(edad, sexo))
-print("Consumes alrededor de ",TMC2(peso, estatura, edad, sexo, nivel_ejercicio), " calorías diarias.")
+print("Consumes alrededor de","%.2f" % TMC2(peso, estatura, edad, sexo, nivel_ejercicio), "calorías diarias.")
