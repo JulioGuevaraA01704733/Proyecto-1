@@ -50,7 +50,13 @@ def TMC2(peso2, estatura2, edad2, sexo2, ejercicio):
         return (TMC(peso2, estatura2, edad2, sexo2) * 1.72)
     elif ejercicio == 5 :
         return (TMC(peso2, estatura2, edad2, sexo2) * 1.9)
-    
+
+lista_consejos = ["Puedes intentar caminar y/o trotar una vez por semana.", "Esfuérzate por ser constante.", "Procura consumir las calorías necesarias.", "Mantén un balance entre descanso y trabajo", "Sé conciente de la capacidad de tu cuerpo."]
+
+def consejo(nivel_e):
+    nivel_t = nivel_e - 1 
+    print("Toma un consejo: ", lista_consejos[nivel_t])
+
 print("Hola, esta es tu calculadora de IMC.")
 print("¿Cuál es tu peso en kilogramos?")
 peso = float(input())
@@ -65,3 +71,4 @@ nivel_ejercicio = int(input())
 print("Tu IMC es de","%.2f" % IMC(peso, estatura))
 print(IMC_ideal(edad, sexo))
 print("Consumes alrededor de","%.2f" % TMC2(peso, estatura, edad, sexo, nivel_ejercicio), "calorías diarias.")
+print(consejo(nivel_ejercicio))
