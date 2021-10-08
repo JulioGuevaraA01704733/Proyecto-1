@@ -7,6 +7,7 @@ def IMC_ideal (edad1, sexo1):
     elif edad1 >= 65 :
         return "Su IMC ideal está entre 25 y 30."
     else:
+        edad_f = (edad1 - 15) // 10
         if sexo1 == "hombre" or sexo1 == "Hombre" :
             ideal_inf = 19
             ideal_sup = 24
