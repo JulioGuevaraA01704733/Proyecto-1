@@ -8,29 +8,23 @@ def IMC_ideal (edad1, sexo1):
         return "Su IMC ideal está entre 25 y 30."
     else:
         if sexo1 == "hombre" or sexo1 == "Hombre" :
-            if edad1 >= 16 and edad1 <= 24 :
-                return "Tu IMC ideal está entre 19 y 24."
-            elif edad1 >= 25 and edad1 <= 34 :
-                return "Tu IMC ideal está entre 20 y 25."
-            elif edad1 >= 35 and edad1 <= 44 :
-                return "Tu IMC ideal está entre 21 y 26."
-            elif edad1 >= 45 and edad1 <= 54 :
-                return "Tu IMC ideal está entre 22 y 27."
-            elif edad1 >= 55 and edad1 <= 64 :
-                return "Tu IMC ideal está entre 23 y 28."
+            ideal_inf = 19
+            ideal_sup = 24
         elif sexo1 == "mujer" or sexo1 == "Mujer" :
             if edad1 == 16 :
                 return "Tu IMC ideal está entre 19 y 24."
             elif edad1 == 17 or edad1 == 18 :
                 return "Tu IMC ideal está entre 20 y 25."
-            elif edad1 >= 19 and edad1 <= 24 :
-                return "Tu IMC ideal está entre 21 y 26."
-            elif edad1 >= 25 and edad1 <= 34 :
-                return "Tu IMC ideal está entre 22 y 27."
-            elif edad1 >= 35 and edad1 <= 54 :
+            elif edad1 >= 45 and edad1 <= 54 :
                 return "Tu IMC ideal está entre 23 y 28."
             elif edad1 >= 55 and edad1 <= 64 :
-                return "Tu IMC ideal está entre 23 y 28."
+                return "Tu IMC ideal está entre 24 y 29."
+            else:
+                ideal_inf = 21
+                ideal_sup = 26
+        ideal_inf = ideal_inf + edad_f
+        ideal_sup = ideal_sup + edad_f
+        print("Tu IMC ideal está entre ", ideal_inf, " y ", ideal_sup)
 
 #TMC representa Tasa Metabólica Basal
 def TMC(peso2, estatura2, edad2, sexo2):
