@@ -47,10 +47,16 @@ def TMC2(peso2, estatura2, edad2, sexo2, ejercicio):
         return (TMC(peso2, estatura2, edad2, sexo2) * 1.9)
 
 lista_consejos = ["Puedes intentar caminar y/o trotar una vez por semana.", "Esfuérzate por ser constante.", "Procura consumir las calorías necesarias.", "Mantén un balance entre descanso y trabajo", "Sé conciente de la capacidad de tu cuerpo."]
+lista_porras = ["¡Échale ganas, haz ejercicio!", "¡Sigue esforzándote!", "¡Wow, haces mucho ejercicio!", "!Impresionante¡ ¿ejercicio casi diario? Eres grande","¡Bravo, qué nivel!"]
+lista_com = [lista_consejos, lista_porras]
 
-def consejo(nivel_e):
+def comentario(decision1, nivel_e):
     nivel_t = nivel_e - 1 
-    print("Toma un consejo: ", lista_consejos[nivel_t])
+    if decision1 == "porra" or decision1 == "Porra" or decision1 == "porras" or decision1 == "Porras" or decision1 == "PORRAS" :
+        pos_com = 1
+    else :
+        pos_com = 0
+    print(lista_com[pos_com][nivel_t])
 
 print("Hola, esta es tu calculadora de IMC.")
 print("¿Cuál es tu peso en kilogramos?")
@@ -63,7 +69,9 @@ print("¿Cuál es tu edad?")
 edad = int(input())
 print("Indica tu nivel de ejercicio: \n 1 si haces poco ejercicio o nulo \n 2 si haces ejercicio ligero de 1 a 3 días de la semana \n 3 si ejercicio moderado, de 3 a 5 días a la semana \n 4 si haces ejercicio de 6 a 7 días a la semana \n 5 si entrenas diariamente mañana y tarde")
 nivel_ejercicio = int(input())
+print("¿Qué prefieres, consejo o porras?")
+decision = str(input())
 print("Tu IMC es de","%.2f" % IMC(peso, estatura))
 print(IMC_ideal(edad, sexo))
 print("Consumes alrededor de","%.2f" % TMC2(peso, estatura, edad, sexo, nivel_ejercicio), "calorías diarias.")
-print(consejo(nivel_ejercicio))
+print(comentario(decision, nivel_ejercicio))
