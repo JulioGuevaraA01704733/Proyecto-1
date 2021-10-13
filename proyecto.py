@@ -57,6 +57,26 @@ def comentario(decision1, nivel_e):
     else :
         pos_com = 0
     print(lista_com[pos_com][nivel_t])
+    
+def rutina(nivel):
+    if nivel < 4 :
+        dia = 1
+        tiempo = 15 * nivel
+        repeticiones = 10 * nivel
+        limite_tiempo = 15 * nivel - 1
+        limite_repeticiones = 10 * nivel + 1
+        print("Incluimos una rutina que te podría interesar, donde semanalmente trabajas 6 días y descansas 1:")
+        while dia < 7 :
+            print("Día ", dia, ": ", tiempo, " minutos de cardio y ", repeticiones, " abdominales.")
+            if tiempo > limite_tiempo :
+                tiempo = tiempo - 10
+            else :
+                tiempo = tiempo + 10
+            if repeticiones < limite_repeticiones :
+                repeticiones = repeticiones + 5
+            else :
+                repeticiones = repeticiones - 5
+            dia = dia + 1
 
 print("Hola, esta es tu calculadora de IMC.")
 print("¿Cuál es tu peso en kilogramos?")
@@ -75,3 +95,4 @@ print("Tu IMC es de","%.2f" % IMC(peso, estatura))
 print(IMC_ideal(edad, sexo))
 print("Consumes alrededor de","%.2f" % TMC2(peso, estatura, edad, sexo, nivel_ejercicio), "calorías diarias.")
 print(comentario(decision, nivel_ejercicio))
+print(rutina(nivel_ejercicio))
