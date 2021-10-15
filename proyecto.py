@@ -26,6 +26,7 @@ def IMC_ideal (edad1, sexo1):
         ideal_inf = ideal_inf + edad_f
         ideal_sup = ideal_sup + edad_f
         print("Tu IMC ideal está entre ", ideal_inf, " y ", ideal_sup)
+    return ""
 
 #TMC representa Tasa Metabólica Basal
 def TMC(peso2, estatura2, edad2, sexo2):
@@ -57,7 +58,8 @@ def comentario(decision1, nivel_e):
     else :
         pos_com = 0
     print(lista_com[pos_com][nivel_t])
-    
+    return ""
+
 def rutina(nivel):
     if nivel < 4 :
         dia = 1
@@ -77,6 +79,7 @@ def rutina(nivel):
             else :
                 repeticiones = repeticiones - 5
             dia = dia + 1
+    return ""
 
 print("Hola, esta es tu calculadora de IMC.")
 print("¿Cuál es tu peso en kilogramos?")
