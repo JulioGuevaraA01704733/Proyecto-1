@@ -48,7 +48,7 @@ def TMC2(peso2, estatura2, edad2, sexo2, ejercicio):
         return (TMC(peso2, estatura2, edad2, sexo2) * 1.9)
 
 lista_consejos = ["Puedes intentar caminar y/o trotar una vez por semana.", "Esfuérzate por ser constante.", "Procura consumir las calorías necesarias.", "Mantén un balance entre descanso y trabajo", "Sé conciente de la capacidad de tu cuerpo."]
-lista_porras = ["¡Échale ganas, haz ejercicio!", "¡Sigue esforzándote!", "¡Wow, haces mucho ejercicio!", "!Impresionante¡ ¿ejercicio casi diario? Eres grande","¡Bravo, qué nivel!"]
+lista_porras = ["¡Échale ganas, haz ejercicio!", "¡Sigue esforzándote!", "¡Wow, haces mucho ejercicio!", "¡Impresionante! ¿ejercicio casi diario? Eres grande","¡Bravo, qué nivel!"]
 lista_com = [lista_consejos, lista_porras]
 
 def comentario(decision1, nivel_e):
