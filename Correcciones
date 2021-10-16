@@ -1,0 +1,80 @@
+Sub-Competencia: SICT0301A - componente: aplica estructuras condicionales para resolver un problema (avance 3)
+
+Error original: No incluía estructuras condicionales
+
+Cambio realizado: se agregaron estructuras condicionales en varias funciones
+
+Líneas de código donde se ve la corrección: 5 a 25, 33 a 36, 39 a 48, 56 a 60, 64 a 80.
+Ejemplo: 
+def TMC2(peso2, estatura2, edad2, sexo2, ejercicio):
+    if ejercicio == 1:
+        return (TMC(peso2, estatura2, edad2, sexo2) * 1.2)
+    elif ejercicio == 2 :
+        return (TMC(peso2, estatura2, edad2, sexo2) * 1.375)
+    elif ejercicio == 3 :
+        return (TMC(peso2, estatura2, edad2, sexo2) * 1.55)
+    elif ejercicio == 4 :
+        return (TMC(peso2, estatura2, edad2, sexo2) * 1.72)
+    elif ejercicio == 5 :
+        return (TMC(peso2, estatura2, edad2, sexo2) * 1.9)
+
+Sub-Competencia: SICT0301A - componente: aplica estructuras cíclicas para resolver un problema de manera eficiente (avance 4)
+
+Error original: No incluía estructuras cíclicas
+
+Cambio realizado: se agregó una función que hace uso de las estructuras cíclicas
+def rutina(nivel):
+    if nivel < 4 :
+        dia = 1
+        tiempo = 15 * nivel
+        repeticiones = 10 * nivel
+        limite_tiempo = 15 * nivel - 1
+        limite_repeticiones = 10 * nivel + 1
+        print("Incluimos una rutina que te podría interesar, donde semanalmente trabajas 6 días y descansas 1:")
+        while dia < 7 :
+            print("Día ", dia, ": ", tiempo, " minutos de cardio y ", repeticiones, " abdominales.")
+            if tiempo > limite_tiempo :
+                tiempo = tiempo - 10
+            else :
+                tiempo = tiempo + 10
+            if repeticiones < limite_repeticiones :
+                repeticiones = repeticiones + 5
+            else :
+                repeticiones = repeticiones - 5
+            dia = dia + 1
+            
+Líneas de código donde se ve la corrección: 63 a 81
+
+Sub-Competencia: SICT0401A - Separa el código en funciones pequeñas reusables, haciendo uso correcto de paso por parametros y return (avance 2)
+
+Error original: No separaba el código en funciones pequeñas
+
+Cambio realizado: Se separó el código en funciones pequeñas
+Ejemplos: 
+def TMC(peso2, estatura2, edad2, sexo2):
+    if sexo2 == "mujer" or sexo2 == "Mujer" :
+        return 655 + 9.6 * peso2 + 180 * estatura2 - 4.7 * edad2
+    else :
+        return 66 + 13.7 * peso2 + 500 * estatura2 - 6.75 * edad2
+    
+def TMC2(peso2, estatura2, edad2, sexo2, ejercicio):
+    if ejercicio == 1:
+        return (TMC(peso2, estatura2, edad2, sexo2) * 1.2)
+    elif ejercicio == 2 :
+        return (TMC(peso2, estatura2, edad2, sexo2) * 1.375)
+    elif ejercicio == 3 :
+        return (TMC(peso2, estatura2, edad2, sexo2) * 1.55)
+    elif ejercicio == 4 :
+        return (TMC(peso2, estatura2, edad2, sexo2) * 1.72)
+    elif ejercicio == 5 :
+        return (TMC(peso2, estatura2, edad2, sexo2) * 1.9)
+        
+Líneas de código donde se ve la corrección: 1 a 82
+
+Sub-Competencia: SEG0702A - Usa correctamente un repositorio de programación en línea (avance 1)
+
+Error original: No usaba correctamente un repositorio de programación en línea
+
+Cambio realizado: Usa correctamente un repositorio de programación en línea
+
+Líneas de código donde se ve la corrección: N/A
