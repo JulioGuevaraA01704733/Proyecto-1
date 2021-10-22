@@ -1,3 +1,5 @@
+from fpdf import FPDF
+
 def IMC (peso1, estatura1):
     """
     Recibe el peso en kilogramos y la estatura en metros del usuario. Realiza la operación aritmética para la obtención del número que llamamos IMC y devuelve dicho valor.
@@ -135,3 +137,14 @@ print("Consumes alrededor de","%.2f" % TMC2(peso, estatura, edad, sexo, nivel_ej
 print(comentario(decision, nivel_ejercicio))
 print(rutina(nivel_ejercicio))
 #En esta sección se imprimen todas las preguntas que le piden al usuario las variables que se utilizarán, además de posteriormente imprimir lo que devuelve cada función
+pdf = FPDF()
+pdf.add_page()
+pdf.set_font('Times', '', 12)
+pdf.cell(200, 10, 'Reporte', ln=1)
+pdf.cell(250, 10, str(IMC(peso, estatura)), ln=2)
+pdf.cell(200, 10, str(IMC_ideal(edad, sexo)), ln=3)
+pdf.cell(200, 10, str(TMC2(peso, estatura, edad, sexo, nivel_ejercicio)), ln=4)
+pdf.cell(200, 10, str(comentario(decision, nivel_ejercicio)), ln=5)
+pdf.cell(200, 10, str(rutina(nivel_ejercicio)), ln=6)
+pdf.output('ReporteCalculadoraIMC.pdf', 'F')
+#Para generar un pdf con lo que regresan las funciones
