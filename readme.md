@@ -9,7 +9,11 @@ Algoritmo para cacular el Índice de Masa Corporal (IMC) de una persona, el rang
 Guía para TMB:
 
 http://gymvirtual.com/como-calcular-las-calorias-que-necesitas/
+
 Otras referencias:
+
 https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/bot-creator/using-the-workbench/cloud-create-a-pdf-using-python-script.html
+
 https://stackoverflow.com/questions/2252726/how-to-create-pdf-files-in-python
+
 https://realpython.com/creating-modifying-pdf/#creating-a-pdf-file-from-scratch
