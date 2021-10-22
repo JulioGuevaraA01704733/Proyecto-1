@@ -9,62 +9,7 @@ Algoritmo para cacular el Índice de Masa Corporal (IMC) de una persona, el rang
 Guía para TMB:
 
 http://gymvirtual.com/como-calcular-las-calorias-que-necesitas/
-
-E(O)= Imprimir preguntas ¿Cuál es tu peso, sexo, edad, estatura?
-
-Proceso: 
-1. Leer y registrar respuestas como variables
-2. Efectuar cálculo para definir el IMC. Peso en kg / (altura en metros)**2
-3. Si IMC<x , entonces
-  Imprimir("Estás en el rango de peso bajo con un IMC de ")
-  Imprimir(IMC)
-  si IMC>=x y IMC<=y , entonces
-  Imprimir("Estás en el rango de peso normal con un IMC de ")
-  Imprimir (IMC)
-  etc.
-  
-  
-4. Si género=mujer, entonces
-
-    Si edad<x, entonces
-    
-    Imprimir("Tu indice de masa coporal ideal es entre x y z")
-    
-    Si edad>=x y edad<=x, entonces
-    
-    Imprimir("Tu indice de masa coporal ideal es entre x y z")
-    
-    etc.
-    
-    
-    Si no, entonces
-    
-    Si edad<=x, entonces
-    
-    Imprimir("Tu indice de masa coporal ideal es entre x y z")
-    
-    Si edad>=x y edad<=x, entonces
-    
-    Imprimir("Tu indice de masa coporal ideal es entre x y z")
-    
-    etc.
-    
-    
-E(F)= Impresión de tu IMC y rango recomendado.
-
-"""
-
-
-print("Hola, esta es tu calculadora de IMC.")
-
-print("¿Cuál es tu peso en kilogramos?")
-
-peso = float(input())
-
-print("¿Cuál es tu estatura en metros?")
-
-estatura = float(input())
-
-IMC = peso / (estatura*estatura)
-
-print("Tu IMC es de ","%.2f" % IMC)
+Otras referencias:
+https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/bot-creator/using-the-workbench/cloud-create-a-pdf-using-python-script.html
+https://stackoverflow.com/questions/2252726/how-to-create-pdf-files-in-python
+https://realpython.com/creating-modifying-pdf/#creating-a-pdf-file-from-scratch
