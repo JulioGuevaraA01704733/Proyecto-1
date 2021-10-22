@@ -17,3 +17,10 @@ https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-clou
 https://stackoverflow.com/questions/2252726/how-to-create-pdf-files-in-python
 
 https://realpython.com/creating-modifying-pdf/#creating-a-pdf-file-from-scratch
+
+
+"Para ejecutar el prog es necesario tener instalada la librería fpdf, en caso de no tenerla hacer:
+
+Pip install fpdf 
+
+En la terminal del python"
